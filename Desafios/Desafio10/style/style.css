@@ -8,13 +8,6 @@
     font-weight: normal;
 }
 
-@font-face {
-    font-family: 'Android';
-    src: url('../');
-}
-
-
-
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
