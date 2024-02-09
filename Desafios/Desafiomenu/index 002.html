@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Document</title>
+    <style>
+        * {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: gray;
+    
+}
+
+
+
+menu {
+    margin-top: 10%;
+}
+
+menu > ul > li {
+
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.link {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 8px #000000a0;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 60px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.link i {
+    transition: .4s;
+
+}
+
+.texto:hover {
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    font-size: 1rem;
+}
+
+.link:hover i {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.link01 {
+    color: #ff5500;
+}
+
+.link02  {
+    color: #0af;
+}
+
+.link03 {
+    color: #f08;
+}
+
+
+.link04 {
+    color: blue;
+}
+
+.link05 {
+    color: #211C6A;
+}
+
+.link06 {
+    color: red;
+}
+
+
+.link01::before {
+    background-color: #ff5500;
+}
+
+
+.link02::before {
+    background-color: #0af;
+}
+
+.link03::before {
+    background-color: #f08;
+}
+
+.link04::before {
+    background-color: blue;
+}
+
+.link05::before {
+    background-color: #211C6A;
+}
+
+.link06::before {
+    background-color: red;
+}
+
+
+
+.link::before {
+    content: "";
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    position: absolute;
+    left: -200px;
+    top: 105%;
+    
+}
+
+.texto {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    top: 70%;
+    font-size: 1rem;
+
+}
+
+.texto::before {
+    content: "";
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 72%;
+    font-size: 1rem;
+
+
+    /*
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+
+    */
+    
+}
+
+
+
+.link:hover::before {
+    animation: desloc 1s;
+    left: 0px;
+    top: 0px
+
+}
+
+
+
+@keyframes desloc {
+    0% {
+        left: -200px;
+        top: 105%;
+    }
+
+    50% {
+        left: 15%;
+        top: -25%
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+
+}
+
+
+    </style>
+
+    <!--<link rel="stylesheet" href="estilos/style.css">
+    -->
+</head>
+
+
+
+<body>
+
+    <menu>
+        <ul>
+            <li><a href="#" class="link link01">
+                <i class="bi bi-house-door-fill"></i>
+                <i class="texto">Desenvolimento de Competências</i>
+            </a></li>
+
+            <li><a href="#"><a href="#" class="link link02">
+                <i class="bi bi-play-circle"></i>
+                <i class="texto">Eixos temáticos</i>
+            </a></a></li>
+
+            <li><a href="#" class="link link03">
+                <i class="bi bi-heart-fill"></i>
+                <i class="texto">Tutoriais</i>
+            </a></li>
+            <li><a href="#" class="link link04"><i class="bi bi-display"></i>
+            </a></li>
+            <li><a href="#" class="link link05"><i class="bi bi-camera-fill"></i>
+            </a></li>
+            <li><a href="#" class="link link06"><i class="bi bi-controller"></i>
+            </a></li>
+
+        </ul>
+    </menu>
+
+        
+    
+    
+    
+    
+    
+    
+   
+
+        
+</body>
+</html>

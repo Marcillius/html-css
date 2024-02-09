@@ -75,3 +75,11 @@ article > p {
     margin-bottom: 20px;
     text-indent: 20px;
 }
+
+img#home {
+    width: 200px;
+    color: white;
+    background-color: blueviolet;
+    padding-left: 0px;
+
+}
