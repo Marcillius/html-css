@@ -13,4 +13,4 @@ Exercícios: <br>
 <a href="https://marciliorogerio.github.io/html-css/Exercicios/Ex001/index.html" target="_blank">Executar o exercício 001</a>
 
 Exercícios: <br>
-<a href="https://marciliorogerio.github.io/html-css/Desafios/Desafiomenu/index.html" target="_blank">Executar o exercício 001</a>
+<a href="https://marciliorogerio.github.io/html-css/Desafios/Desafiomenu/index02.html" target="_blank">Executar desafio menu</a>
