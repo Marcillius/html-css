@@ -16,6 +16,8 @@
 
 body, html {
     background-color: lightgray;
+    padding: 15px;
+    
     }
 
 header {
@@ -24,23 +26,25 @@ header {
 }
 
 
-
 menu {
     margin-top: 10%;
+    margin: auto;
+    position: absolute;
 }
 
 menu > ul > li {
 
     display: inline-block;
-    padding: 10px;
+    text-decoration: none;
+    
 }
 
 
 .link {
-    width: 220px;
+    width: 200px;
     height: 200px;
     box-shadow: 0 0 8px #000000a0;
-    margin: 10px 10px;
+    margin: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,22 +158,8 @@ menu > ul > li {
     left: 0px;
     top: 72%;
     font-size: 1rem;
-
-
-    /*
-    margin: 0 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    font-size: 20px;
-    position: relative;
-    overflow: hidden;
-
-    */
-    
+   
 }
-
 
 
 .link:hover::before {
@@ -178,7 +168,6 @@ menu > ul > li {
     top: 0px
 
 }
-
 
 
 @keyframes desloc {
@@ -224,13 +213,22 @@ menu > ul > li {
 
             <li><a href="#" class="link link03">
                 <i class="bi bi-heart-fill"></i>
+                <i class="texto">Outra coisa</i>
+            </a></li>
+
+            <li><a href="#" class="link link04">
+                <i class="bi bi-display"></i>
+                <i class="texto">Mais outra coisa</i>
+            </a></li>
+
+            <li><a href="#" class="link link05">
+                <i class="bi bi-camera-fill"></i>
                 <i class="texto">Tutoriais</i>
             </a></li>
-            <li><a href="#" class="link link04"><i class="bi bi-display"></i>
-            </a></li>
-            <li><a href="#" class="link link05"><i class="bi bi-camera-fill"></i>
-            </a></li>
-            <li><a href="#" class="link link06"><i class="bi bi-controller"></i>
+
+            <li><a href="#" class="link link06">
+                <i class="bi bi-controller"></i>
+                <i class="texto">Mais outra</i>
             </a></li>
 
         </ul>
