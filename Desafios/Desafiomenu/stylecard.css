@@ -19,7 +19,7 @@ body {
     /*align-items: center;*/
     justify-content: center;
     min-height: 100vh;
-    background: #222;
+    background: #0e6b62;
 }
 
 .container {
@@ -56,8 +56,8 @@ body {
     text-align: center;
     line-height: 90px;
     font-size: 2.6em;
-    color: #fff;
-    opacity: 0.25;
+    color: white;
+    opacity: 0.4;
     transition: 0.5s;
     cursor: pointer;
     z-index: 2;
@@ -74,7 +74,7 @@ body {
 .indicator {
     position: absolute;
     width: 80px;
-    height: 80px;
+    height: 82px;
     background: var(--clr);
     z-index: 1;
     border-top-left-radius: 30px;
@@ -127,17 +127,17 @@ body {
     position: absolute;
     top: -70px;
     left: 80px;
-    width: 80vw;
+    width: 83vw;
     max-width: 95vw;
-    height: 620px;
+    height: 90vh;
     background: linear-gradient(90deg, var(--clr), #3c1053);
     border-radius: 30px;
 }
 
 .content .contentBox {
     position: absolute;
-    inset: 0;
-    padding: 50px;
+    inset: 0px;
+    padding: 10px;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
@@ -154,4 +154,170 @@ body {
 
 .content .contentBox h2, p {
     color: white;
+}
+
+h2 {
+    color: #ff5500;
+    padding-left: 50px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    
+    
+}
+
+
+menu {
+    margin: auto;
+    position: absolute;
+    padding-left: 30px;
+        
+}
+
+menu > ul > li {
+
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+
+.link {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 8px #000000a0;
+    margin: 20px 20px;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.texto {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    margin: 05px;
+    top: 65%;
+    font-size: 1.3rem;
+
+}
+
+.bi {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    top: 20%;
+    
+}
+
+
+.link i {
+    transition: .4s;
+
+}
+
+
+.link:hover i {
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.link01 {
+    color: #ff5500;
+}
+
+.link02  {
+    color: #0af;
+}
+
+.link03 {
+    color: #f08;
+}
+
+
+.link04 {
+    color: blue;
+}
+
+.link05 {
+    color: #211C6A;
+}
+
+.link06 {
+    color: red;
+}
+
+
+.link01::before {
+    background-color: #ff5500;
+}
+
+
+.link02::before {
+    background-color: #0af;
+}
+
+.link03::before {
+    background-color: #f08;
+}
+
+.link04::before {
+    background-color: blue;
+}
+
+.link05::before {
+    background-color: #211C6A;
+}
+
+.link06::before {
+    background-color: red;
+}
+
+
+
+.link::before {
+    content: "";
+    color: black;
+    width: 255px;
+    height: 255px;
+    border-radius: 20px;
+    position: absolute;
+    left: -200px;
+    top: 105%;
+    
+}
+
+
+.link:hover::before {
+    animation: desloc 1s;
+    left: 0px;
+    top: 0px
+
+}
+
+
+@keyframes desloc {
+    0% {
+        left: -200px;
+        top: 105%;
+    }
+
+    50% {
+        left: 15%;
+        top: -25%
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+
 }

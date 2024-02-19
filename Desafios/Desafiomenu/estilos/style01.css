@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: rgb(147, 5, 172);
+    padding: 15px;
+    
+    }
+
+header {
+    background-color: rgb(173, 42, 42);
+        
+}
+
+
+menu {
+    margin-top: 10%;
+    margin: auto;
+    position: absolute;
+}
+
+menu > ul > li {
+
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+
+.link {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 8px #000000a0;
+    margin: 20px 20px;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.texto {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    margin: 05px;
+    top: 65%;
+    font-size: 1.2rem;
+
+}
+
+.bi {
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    top: 20%;
+    
+}
+
+
+.link i {
+    transition: .4s;
+
+}
+
+
+.texto:hover {
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 70%;
+    font-size: 1rem;
+}
+
+.link:hover i {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.link01 {
+    color: #ff5500;
+}
+
+.link02  {
+    color: #0af;
+}
+
+.link03 {
+    color: #f08;
+}
+
+
+.link04 {
+    color: blue;
+}
+
+.link05 {
+    color: #211C6A;
+}
+
+.link06 {
+    color: red;
+}
+
+
+.link01::before {
+    background-color: #ff5500;
+}
+
+
+.link02::before {
+    background-color: #0af;
+}
+
+.link03::before {
+    background-color: #f08;
+}
+
+.link04::before {
+    background-color: blue;
+}
+
+.link05::before {
+    background-color: #211C6A;
+}
+
+.link06::before {
+    background-color: red;
+}
+
+
+
+.link::before {
+    content: "";
+    color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    position: absolute;
+    left: -200px;
+    top: 105%;
+    
+}
+
+
+
+.texto::before {
+    content: "";
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    top: 72%;
+    font-size: 1rem;
+   
+}
+
+
+.link:hover::before {
+    animation: desloc 1s;
+    left: 0px;
+    top: 0px
+
+}
+
+
+@keyframes desloc {
+    0% {
+        left: -200px;
+        top: 105%;
+    }
+
+    50% {
+        left: 15%;
+        top: -25%
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+
+}
